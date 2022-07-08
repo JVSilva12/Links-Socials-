@@ -4,13 +4,31 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bg-color: #EDF2FF;
+    --text-color: #000;
+    --text-color-light: #fff;
+}
+
+body.light{
+    --bg-color: #EDF2FF;
+    --text-color: #000;
+    --text-color-light: #fff;
+}
+
+body.dark{
+    --bg-color: #00082F;
+    --text-color: #fff;
+    --text-color-light: #fff;
+}
+
 body{
     display: flex;
     justify-content: center;
     width: 100%;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    background: #e5e5e5;
+    background: var(--bg-color);
 }
 
 main{
@@ -24,6 +42,7 @@ main .header{
     justify-content: center;
     align-items: center;
     position: relative;
+    color: var(--text-color);
 }
 
 main .header img{
@@ -63,7 +82,7 @@ main .contentButtons a{
     cursor: pointer;
     transition: 0.2s;
 
-    color: white;
+    color: var(--text-color-light);
     font-size: 17px;
     font-weight: 700;
 
@@ -86,6 +105,7 @@ main .footer{
     font-weight: 400;
     opacity: 0.6;
     transition: 0.2s;
+    color: var(--text-color);
 }
 
 main .footer:hover{
