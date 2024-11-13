@@ -1,108 +1,112 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --bg-color: #EDF2FF;
-    --text-color: #000;
-    --text-color-light: #fff;
+:root {
+  --bg-color: #edf2ff;
+  --text-color: #000;
+  --text-color-light: #fff;
 }
 
-body.dark{
-    --bg-color: #00082F;
-    --text-color: #fff;
-    --text-color-light: #fff;
-    --text-color-dark: #000;
+body.dark {
+  --bg-color: #00082f;
+  --text-color: #fff;
+  --text-color-light: #fff;
+  --text-color-dark: #000;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-    background: var(--bg-color);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background: var(--bg-color);
 }
 
-main{
-    min-width: 30%;
-    padding: 3% 5%; 
+main {
+  min-width: 30%;
+  padding: 3% 5%;
 }
 
-main .header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: var(--text-color);
+main .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: var(--text-color);
 }
 
-main .header img{
-    transition: 0.2s all ease-in-out;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    padding: 3px;
-    border: 3px solid #4263eB;
-    position: relative;
+main .header img {
+  transition: 0.2s all ease-in-out;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 3px solid #4263eb;
+  position: relative;
 }
 
-main .header h1{
-    margin: 10px 10px 0px 10px;
-    font-weight: 500;
+main .header h1 {
+  margin: 10px 10px 0px 10px;
+  font-weight: 500;
 }
 
-main .header p{
-    font-size: 20px;
-    opacity: 0.7;
-    margin-bottom: 20px;
+main .header p {
+  font-size: 20px;
+  opacity: 0.7;
+  margin-bottom: 20px;
 }
 
-main .contentButtons a img{
-    width: 30px;
-    margin: 10px;
+main .contentButtons a img {
+  width: 30px;
+  margin: 10px;
 }
 
-main .contentButtons a{
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Roboto';
-    padding: 0px;
-    border: none;
-    border-radius: 5px;
-    margin: 20px 0px;
-    cursor: pointer;
-    transition: 0.2s;
+main .contentButtons a {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto";
+  padding: 0px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0px;
+  cursor: pointer;
+  transition: 0.2s;
 
-    color: var(--text-color-light);
-    font-size: 17px;
-    font-weight: 700;
+  color: var(--text-color-light);
+  font-size: 17px;
+  font-weight: 700;
 
-    width: 100%;
-    background: #4263eB;
+  width: 100%;
+  background: #4263eb;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-main .contentButtons a:hover{
-    background: #364FC7;
+main .contentButtons a:hover {
+  background: #364fc7;
 }
 
-main .footer{
-    text-align: center;
-    margin-top: 50px;
-    font-size: 20px;
-    font-weight: 400;
-    opacity: 0.6;
-    transition: 0.2s;
-    color: var(--text-color);
+main .contentButtons .logo-whats {
+  border-radius: 5px;
 }
 
-main .footer:hover{
-    opacity: 1;
+main .footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.6;
+  transition: 0.2s;
+  color: var(--text-color);
+}
+
+main .footer:hover {
+  opacity: 1;
 }
