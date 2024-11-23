@@ -98,15 +98,25 @@ main .contentButtons .logo-whats {
 }
 
 main .footer {
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Faz o footer ocupar toda a largura da tela */
   text-align: center;
-  margin-top: 50px;
-  font-size: 20px;
-  font-weight: 400;
-  opacity: 0.6;
-  transition: 0.2s;
-  color: var(--text-color);
+  padding: 10px;
 }
 
-main .footer:hover {
-  opacity: 1;
+main .footer p {
+  color: #d3d3d3;
+}
+
+main .footer a {
+  text-decoration: none;
+  /* font-weight: bold; */
+}
+
+main .footer a:hover {
+  /* text-decoration: underline; */
+  color: #364fc7;
 }
